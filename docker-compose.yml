@@ -4,6 +4,7 @@ services:
 
   postgres:
     image: debezium/postgres
+    container_name: postgres
     environment:
       POSTGRES_PASSWORD: admin
       POSTGRES_USER: admin
