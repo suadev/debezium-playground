@@ -22,7 +22,7 @@ $body = @"
 "@
 
 $params = @{
-    Uri         = 'http://localhost:8083'
+    Uri         = 'http://localhost:8083/connectors/'
     Headers     = $headers
     Method      = 'POST'
     Body        = $body
