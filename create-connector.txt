@@ -1,3 +1,0 @@
-curl -H @{ "Content-Type" = "application/json" } -d "{ \"key1\": \"value1\" }" http://localhost:8083
-
-curl -H \"Content-Type: application/json\" --data @connector-config.json http://localhost:8083

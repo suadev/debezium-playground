@@ -43,6 +43,9 @@ services:
 
   connector:
     image: debezium/connect:latest
+    container_name: kafka_connect_with_debezium
+    networks: 
+      - broker-kafka
     ports:
       - "8083:8083"
     environment:
@@ -64,7 +67,7 @@ services:
     ports:
       - 9000:9000
     environment:
-      KAFKA_BROKERCONNECT: kafka:29092
+      KAFKA_BROKERCONNECT: kafka:9092
 
 networks: 
   broker-kafka:
