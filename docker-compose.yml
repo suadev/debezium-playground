@@ -5,13 +5,15 @@ services:
   postgres:
     image: debezium/postgres
     container_name: postgres
+    networks: 
+      - broker-kafka
     environment:
       POSTGRES_PASSWORD: admin
       POSTGRES_USER: admin
     volumes:
        - ./postgres:/data/postgres
     ports:
-      - 6532:6532
+      - 6532:5432
     
   zookeeper:
     image: confluentinc/cp-zookeeper:latest

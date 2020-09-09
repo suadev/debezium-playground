@@ -12,8 +12,8 @@ $body = @"
         "database.port": "5432",
         "database.user": "admin",
         "database.password": "admin",
-        "database.dbname": "product",
-        "database.server.name": "dbserver1",
+        "database.dbname": "product_db",
+        "database.server.name": "postgres",
         "database.whitelist": "product",
         "database.history.kafka.bootstrap.servers": "kafka:9092",
         "database.history.kafka.topic": "schema-changes.product"
